@@ -3,7 +3,7 @@
 A blog created with Gatsby.js, Typescript and GraphQL that uses WordPress as a headless CMS. The blog is done for mere educational purposes. 
 
 ## Practical info
-To run this project locally, first replace the WordPress remote url from `gatsby-config.ts` file with the  server from which you will be sourcing the data. Then do `npm install` and `npm run develop`. Please note that in order to be able to source the data, you need to install and activate the [WPGraphQL](https://wordpress.org/plugins/wp-graphql/) WordPress plugin, as well as the [WPGatsby](https://wordpress.org/plugins/wp-gatsby/) plugin on your WordPress site beforehand.
+To run this project locally, first replace the WordPress remote url from `gatsby-config.ts` file with the  server from which you will be sourcing the data. Then do `npm install` and `npm run develop`. Please note that in order to be able to source the data, you need to install and activate the [WPGraphQL](https://wordpress.org/plugins/wp-graphql/) WordPress plugin, as well as the [WPGatsby](https://wordpress.org/plugins/wp-gatsby/) plugin on your WordPress site beforehand. This will allow you to use GraphQL queries.
 
 ## Why use Gatsby instead of good old WordPress PHP templates?
 
