@@ -1,15 +1,15 @@
 ## Description
 
-A blog created with Gatsby.js, Typescript and GraphQL that uses WordPress as a headless CMS. The sourcing is done using [WPGraphQL](https://wordpress.org/plugins/wp-graphql/) WordPress plugin, as well as the [WPGatsby](https://wordpress.org/plugins/wp-gatsby/) plugin. The blog is done for mere educational purposes. 
+A blog created with Gatsby.js, Typescript and GraphQL that uses WordPress as a headless CMS. The blog is done for mere educational purposes. 
 
 ## Practical info
-To run this project locally, first replace the WordPress remote url from `gatsby-config.ts` file with the  server from which you will be sourcing the data. Then do `npm install` and `npm run develop`.
+To run this project locally, first replace the WordPress remote url from `gatsby-config.ts` file with the  server from which you will be sourcing the data. Then do `npm install` and `npm run develop`. Please note that in order to be able to source the data, you need to install and activate the [WPGraphQL](https://wordpress.org/plugins/wp-graphql/) WordPress plugin, as well as the [WPGatsby](https://wordpress.org/plugins/wp-gatsby/) plugin on your WordPress site beforehand.
 
-## Why use Gatsby instead of WordPress PHP templates?
+## Why use Gatsby instead of good old WordPress PHP templates?
 
-The following text is copied from [gatsby-source-wordpress](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-source-wordpress/docs/why-use-this-plugin.md) Readme, because it is great at explaining why we are doing this.
+The following text is copied from [gatsby-source-wordpress](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-source-wordpress/docs/why-use-this-plugin.md) Readme, because it is great at explaining what is all the hassle about:
 
-For starters you can keep using WordPress as the fantastic CMS it is, and use React and modern tooling for your front-end!
+You can keep using WordPress as the fantastic CMS it is, and use React and modern tooling for your front-end!
 
 Some highlights:
 
@@ -35,7 +35,6 @@ This will open a prompt that will ask you some questions and install necessary d
 2. After that, run: `npm run develop`. This will start a local server at http://localhost:8000/
 
 You can now use the `createPages` api to create the pages. If you ever get stuck, refer to the [Gatsby WordPress blog starter](https://github.com/gatsbyjs/gatsby/tree/master/starters/gatsby-starter-wordpress-blog).
-
 
 ### Useful links
 [Sourcing from WordPress](https://www.gatsbyjs.com/docs/how-to/sourcing-data/sourcing-from-wordpress/)
