@@ -9,7 +9,7 @@ const config: GatsbyConfig = {
     resolve: 'gatsby-source-wordpress',
     options: {
       // Replace this link with your wordpress server url
-      "url": "http://localhost/graphql"
+      "url": "https://estera-demo-01.nasiothemes.com/graphql"
     }
   }, "gatsby-plugin-sass",
     /**
