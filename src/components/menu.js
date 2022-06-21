@@ -25,6 +25,7 @@ const MENU_QUERY = graphql`
             generalSettings {
               title
               description
+              url
             }
         }
     }
@@ -36,8 +37,7 @@ const Menu = () => {
       render={(data) => {
         if (data.allWpMenuItem) {
           const menuItems = data.allWpMenuItem.nodes
-          const wordPressUrl = data.wp.generalSettings.url
-
+          const wordPressUrl = data.wp.generalSettings.url.replace('http','https');
        return (
          <div style={{ marginBottom: "20px" }}>
            {

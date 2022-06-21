@@ -6,7 +6,7 @@ import Menu from "./menu"
 const Layout = ({ isHomePage, children }) => {
   const {
     wp: {
-      generalSettings: { title },
+      generalSettings: { title, description },
     },
   } = useStaticQuery(graphql`
     query LayoutQuery {
@@ -31,6 +31,8 @@ const Layout = ({ isHomePage, children }) => {
             {title}
           </Link>
         )}
+        <br/>
+        {description}
       </header>
       <Menu/>
       <main>{children}</main>
