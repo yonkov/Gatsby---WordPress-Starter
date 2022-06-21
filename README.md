@@ -1,23 +1,21 @@
 ## Description
 
-A blog created with Gatsby.js, Typescript and GraphQL that sources data from a remote WordPress website, which serves as a headless CMS. The blog is done for mere educational purposes. The work is deployed at https://gatsby-wp-example-yonkov.netlify.app/
+A blog created with Gatsby.js, Typescript and GraphQL that sources data from a remote WordPress website, which serves as a headless CMS. The blog displays site title, site description, menu, all blog posts and all pages. It is done for mere educational purposes. The work is deployed at https://gatsby-wp-example-yonkov.netlify.app/
 
 ## Practical info
 To run this project locally, download this repo, then do `npm install` and `npm run develop`. Please note that in order to be able to source the data from any WordPress site, you first need to convert it to Graphql Server. To do that, you need to install and activate the [WPGraphQL](https://wordpress.org/plugins/wp-graphql/) WordPress plugin, as well as the [WPGatsby](https://wordpress.org/plugins/wp-gatsby/) plugin on your WordPress site beforehand. This will allow you to use GraphQL queries.
 
 ## Why use Gatsby instead of good old WordPress PHP templates for development?
 
-The following text is copied from [gatsby-source-wordpress](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-source-wordpress/docs/why-use-this-plugin.md) Readme, because it is great at explaining what is all the hassle about:
-
 You can keep using WordPress as the fantastic CMS it is, and use React and modern tooling for your front-end!
 
 Some highlights:
 
-    Increased security and performance due to the static rendering of Gatsby
-    A componentized architecture for your front-end code with React (better maintainability)
-    A simpler way of asking for data with GraphQL (no need to remember dozens of data retrieval functions)
-    Client-side state management with React opens up the doors to creating an app-like or full on app experience for your users
-    Gatsby is committed to ensuring we are as accessible as possible out of the box
+- Increased security and performance due to the static rendering of Gatsby
+- A componentized architecture for your front-end code with React (better maintainability)
+- A simpler way of asking for data with GraphQL (no need to remember dozens of data retrieval functions)
+- Client-side state management with React opens up the doors to creating an app-like or full on app experience for your users
+- Gatsby is committed to ensuring we are as accessible as possible out of the box
 
 Additionally, this plugin is a great reason to use Gatsby with WordPress. Many of the complex and difficult aspects of going decoupled with WordPress have been abstracted for you behind the scenes, so you can work on building awesome apps and sites instead of reinventing the wheel to get decoupled WordPress working in your project.
 
@@ -34,7 +32,7 @@ This will open a prompt that will ask you some questions and install necessary d
 
 2. After that, run: `npm run develop`. This will start a local server at http://localhost:8000/
 
-You can now use the `createPages` api to create the pages. If you ever get stuck, refer to the [Gatsby WordPress blog starter](https://github.com/gatsbyjs/gatsby/tree/master/starters/gatsby-starter-wordpress-blog).
+You can now use the `createPages` api to create the dynamic pages. If you ever get stuck, refer to the [Gatsby WordPress blog starter](https://github.com/gatsbyjs/gatsby/tree/master/starters/gatsby-starter-wordpress-blog).
 
 ### Useful links
 [Sourcing from WordPress](https://www.gatsbyjs.com/docs/how-to/sourcing-data/sourcing-from-wordpress/)
