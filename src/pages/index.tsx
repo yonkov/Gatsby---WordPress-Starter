@@ -16,7 +16,7 @@ export default function Home({ data }) {
            <Link to={node.slug}>
              <h2 className="entry-title">{node.title}</h2>
            </Link>
-          <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+          <p dangerouslySetInnerHTML={{ __html: node.content }} />
         </article>
       ))}
       {/* highlight-end */}
@@ -31,6 +31,7 @@ export const pageQuery = graphql`
       nodes {
         title
         excerpt
+        content
         slug
       }
     }
