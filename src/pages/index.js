@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import "../styles/index.css"
 
 export default function Home({ data }) {
   //highlight-line
@@ -9,7 +10,7 @@ export default function Home({ data }) {
     <Layout>
       <SEO title="home" />
       {/* highlight-start */}
-      <h1>My WordPress Blog</h1>
+      <h1>My Gatsby - WordPress Blog</h1>
       <h4>Recent Posts</h4>
       {data.allWpPost.nodes.map(node => (
         <article key={node.slug} className="entry-post">
@@ -31,7 +32,6 @@ export const pageQuery = graphql`
       nodes {
         title
         excerpt
-        content
         slug
       }
     }
