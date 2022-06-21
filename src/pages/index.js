@@ -16,7 +16,7 @@ export default function Home({ data }) {
            <Link to={node.slug}>
              <h2 className="entry-title">{node.title}</h2>
            </Link>
-          <p dangerouslySetInnerHTML={{ __html: node.content }} />
+          <div dangerouslySetInnerHTML={{ __html: node.excerpt }} />
         </article>
       ))}
       {/* highlight-end */}
